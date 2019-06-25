@@ -1,0 +1,200 @@
+@mixin underscore ($width, $height, $bottom){
+    content: '';
+    position: absolute;
+    z-index: -1;
+    bottom: $bottom;
+    height: $height;
+    width: $width;
+    background-color: $TextDecoration;
+}
+@mixin text ($size , $weight){
+    font-size: $size;
+    font-weight: $weight;
+    position: relative;
+    z-index: 1;
+}
+
+body {
+    font-family: $generalFontFamily, sans-serif;
+    margin:0;
+    width: 100%;
+    background-color: map-get($color, body);
+    color: map-get($color, footer);
+    font-size: 30px;
+
+    .header {
+        background-image: $backgroundImage;
+        background-position: top;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        position: relative;
+        height: 700px;
+        width: auto;
+        border-bottom-right-radius: 40% 30%;
+        margin-bottom: 30px;
+        
+        .header-wrap {
+            left: 10%;
+            margin-left: 120px;
+            padding-top: 10px;
+            width: 50%;
+            
+            
+            }
+            .header_heading {
+                @include text($size: 60px, $weight: 700);
+                width: 450px;
+                
+                &::before {
+                    @include underscore($width: 250px, $height: 20px, $bottom: 10px);
+                }
+            }
+            .header_text {
+                font-family: $fontFamily, sans-serif;
+                font-size: 16px;
+                white-space: pre-line;
+                padding-bottom: 30px;
+            }
+            .header_button {
+                background-color: $backgroundColorGradient1;
+                padding: 10px 40px 10px 40px;
+                border-color: $backgroundColorGradient1;
+                border-radius: 3px;
+                font-weight: bold;
+                font-family: $generalFontFamily, sans-serif;
+                color: map-get($color, body);
+                font-size: 18px;
+                
+            }
+        }
+    }
+    .section {
+        height: 800px;
+        width: 80%;
+        margin: auto;
+        text-align: center;
+        
+        .section_text {
+            @include text($size: 40px, $weight: 600);
+            margin: 20px auto;
+            width: 500px;
+            
+            &::before {
+                @include underscore ($width: 180px, $height: 12px, $bottom: 6px);
+                right: 12.5%;
+            }
+        }
+        
+        .section_card_wrap {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+            align-items: stretch;
+
+            .section_card {
+                width: 32%;
+                background-color: map-get($color, footer);
+                color: map-get($color, body);
+                padding: 15px;
+                margin: 10px;
+                border-radius: 10px;
+
+                .section_card_img {
+                    width: 100%;
+                }
+                .section_card_heading {
+                    @include text($size: 30px, $weight: 600);
+                    margin: 20px;
+                    &::before {
+                        @include underscore ($width: 200px, $height: 11px, $bottom: 3px);
+                        text-align: center;
+                    }
+                }
+                .section_card_text {
+                    font-size: 16px;
+                    font-family: $fontFamily;
+                }
+            }
+        }
+        .section_banner{
+            position: relative;
+            background: linear-gradient(to right, $backgroundColorGradient1, $backgroundColorGradient2);
+            height: 150px;
+            width: 80%;
+            
+
+            .section_banner_text_wrap {
+                @include text($size: 30px, $weight: 600);
+                padding-left: 30px;
+                width: 500px;
+                
+            }
+            .section_banner_button {
+                background-color: $backgroundColorGradient1;
+                padding: 10px 40px 10px 40px;
+                border-color: $backgroundColorGradient1;
+                border-radius: 3px;
+                font-weight: bold;
+                font-family: $generalFontFamily, sans-serif;
+                color: map-get($color, body);
+                font-size: 18px;
+                z-index: 1;
+                }
+        }
+    }
+    .footer {
+        position: absolute;
+        background-color: map-get($color, footer);
+        color: map-get($color, body);
+        width: 100%;
+        padding-top: 150px;
+        padding-bottom: 30px;
+        font-family: $generalFontFamily, sans-serif;
+        
+
+        .footer-wrap {
+            left: 10%;
+            margin-left: 120px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            right: 10%;
+            
+            .footer_text {
+                width: 300px;
+                font-size: 16px;
+                
+                .footer-cr {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+    .landing-logo {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        height: auto;
+        font-family: $fontFamily, sans-serif;
+        margin-top: 20px;
+        
+        img {
+            width: 45px;
+            height: 45px;
+            margin: 10px;
+        }
+        p {
+            padding-top: 20px;
+            margin: 0;
+            line-height: 20px;
+            font-weight: bold;
+            
+            span {
+                display: block;
+                margin: 0;
+                font-size: 12px;
+                text-align: center;
+            }
+        }
+}

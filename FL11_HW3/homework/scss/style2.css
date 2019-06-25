@@ -1,0 +1,170 @@
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  margin: 0;
+  width: 100%;
+  background-color: #21232e;
+  color: #3b3f50;
+  font-size: 30px; }
+  body .header {
+    background-image: url(../img/m-h-night.jpg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+    height: 700px;
+    width: auto;
+    border-bottom-right-radius: 40% 30%;
+    margin-bottom: 30px; }
+    body .header .header-wrap {
+      left: 10%;
+      margin-left: 120px;
+      padding-top: 10px;
+      width: 50%; }
+    body .header .header_heading {
+      font-size: 60px;
+      font-weight: 700;
+      position: relative;
+      z-index: 1;
+      width: 450px; }
+      body .header .header_heading::before {
+        content: '';
+        position: absolute;
+        z-index: -1;
+        bottom: 10px;
+        height: 20px;
+        width: 250px;
+        background-color: #ff4e33; }
+    body .header .header_text {
+      font-family: "Fresca", sans-serif;
+      font-size: 16px;
+      white-space: pre-line;
+      padding-bottom: 30px; }
+    body .header .header_button {
+      background-color: #dea405;
+      padding: 10px 40px 10px 40px;
+      border-color: #dea405;
+      border-radius: 3px;
+      font-weight: bold;
+      font-family: "Source Sans Pro", sans-serif;
+      color: #21232e;
+      font-size: 18px; }
+
+.section {
+  height: 800px;
+  width: 80%;
+  margin: auto;
+  text-align: center; }
+  .section .section_text {
+    font-size: 40px;
+    font-weight: 600;
+    position: relative;
+    z-index: 1;
+    margin: 20px auto;
+    width: 500px; }
+    .section .section_text::before {
+      content: '';
+      position: absolute;
+      z-index: -1;
+      bottom: 6px;
+      height: 12px;
+      width: 180px;
+      background-color: #ff4e33;
+      right: 12.5%; }
+  .section .section_card_wrap {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: stretch; }
+    .section .section_card_wrap .section_card {
+      width: 32%;
+      background-color: #3b3f50;
+      color: #21232e;
+      padding: 15px;
+      margin: 10px;
+      border-radius: 10px; }
+      .section .section_card_wrap .section_card .section_card_img {
+        width: 100%; }
+      .section .section_card_wrap .section_card .section_card_heading {
+        font-size: 30px;
+        font-weight: 600;
+        position: relative;
+        z-index: 1;
+        margin: 20px; }
+        .section .section_card_wrap .section_card .section_card_heading::before {
+          content: '';
+          position: absolute;
+          z-index: -1;
+          bottom: 3px;
+          height: 11px;
+          width: 200px;
+          background-color: #ff4e33;
+          text-align: center; }
+      .section .section_card_wrap .section_card .section_card_text {
+        font-size: 16px;
+        font-family: "Fresca"; }
+  .section .section_banner {
+    position: relative;
+    background: linear-gradient(to right, #dea405, #96334e);
+    height: 150px;
+    width: 80%; }
+    .section .section_banner .section_banner_text_wrap {
+      font-size: 30px;
+      font-weight: 600;
+      position: relative;
+      z-index: 1;
+      padding-left: 30px;
+      width: 500px; }
+    .section .section_banner .section_banner_button {
+      background-color: #dea405;
+      padding: 10px 40px 10px 40px;
+      border-color: #dea405;
+      border-radius: 3px;
+      font-weight: bold;
+      font-family: "Source Sans Pro", sans-serif;
+      color: #21232e;
+      font-size: 18px;
+      z-index: 1; }
+
+.footer {
+  position: absolute;
+  background-color: #3b3f50;
+  color: #21232e;
+  width: 100%;
+  padding-top: 150px;
+  padding-bottom: 30px;
+  font-family: "Source Sans Pro", sans-serif; }
+  .footer .footer-wrap {
+    left: 10%;
+    margin-left: 120px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    right: 10%; }
+    .footer .footer-wrap .footer_text {
+      width: 300px;
+      font-size: 16px; }
+      .footer .footer-wrap .footer_text .footer-cr {
+        font-size: 16px; }
+
+.landing-logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  height: auto;
+  font-family: "Fresca", sans-serif;
+  margin-top: 20px; }
+  .landing-logo img {
+    width: 45px;
+    height: 45px;
+    margin: 10px; }
+  .landing-logo p {
+    padding-top: 20px;
+    margin: 0;
+    line-height: 20px;
+    font-weight: bold; }
+    .landing-logo p span {
+      display: block;
+      margin: 0;
+      font-size: 12px;
+      text-align: center; }
