@@ -15,7 +15,6 @@ if (doYouWant === false) {
         let questionToContinue = true;
         while (questionToContinue === true) {
             rightNumber = Math.floor(Math.random() * maxRange);
-            console.log(rightNumber);
             numberAttempt = numberAttemptMax;
             prizeAttempt = maxPrize;
             for (numberAttempt; numberAttempt > 0; numberAttempt--) {
