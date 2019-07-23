@@ -1,0 +1,23 @@
+body {
+    margin: 20px;
+    color: #41b5fe;
+}
+hr {
+    background-color: #e4f2fe;
+    border: none;
+    height: 5px;
+}
+h1 {
+    text-align: center;
+}
+#add_action_text {
+    padding: 10px;
+    width: 90%;
+}
+.add_new_action {
+    display: flex;
+    justify-content: space-between;
+}
+.icons {
+    color: #89c4f4;
+}
