@@ -18,6 +18,26 @@ h1 {
     display: flex;
     justify-content: space-between;
 }
-.icons {
+.material-icons {
     color: #89c4f4;
+}
+.icon_add {
+    width: 7%;
+    font-size: 300%;
+}
+.listDiv {
+    display: flex;
+    align-items: center;
+    width: auto;
+}
+.action_list p {
+    margin: 0;
+    padding: 0 10px;
+    width: 50%;
+}
+.action_list {
+    padding: 10px;
+}
+.massage {
+    text-align: center;
 }
