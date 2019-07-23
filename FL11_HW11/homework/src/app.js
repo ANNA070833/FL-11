@@ -47,7 +47,9 @@ function addActionElement() {
     iconEdit.className = 'material-icons';
     iconEdit.innerHTML = 'edit_box';
     listDiv.appendChild(iconEdit);
-    iconEdit.addEventListener('click', editAction);
+    iconEdit.addEventListener('click', editAction, {
+        once: true
+    });
 
 
     let iconDelete = document.createElement('i');
