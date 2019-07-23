@@ -39,7 +39,7 @@ function addActionElement() {
     iconCheck.textContent = 'check_box_outline_blank';
     listDiv.appendChild(iconCheck);
 
-    let text = document.createElement('p');
+    text = document.createElement('p');
     listDiv.appendChild(text);
     text.innerHTML = actionText.value;
 
@@ -55,7 +55,6 @@ function addActionElement() {
     iconDelete.innerHTML = 'delete_box';
     listDiv.appendChild(iconDelete);
     iconDelete.addEventListener('click', del);
-    return text, listDiv;
 }
 function editAction() {
 
@@ -83,7 +82,7 @@ function editAction() {
 
 //delete list item
 function del() {
-    listDiv.remove();
+    this.parentElement.remove();
 }
 actionList.addEventListener('click', (e) => {
     let target = e.target;
@@ -106,5 +105,4 @@ actionList.addEventListener('click', (e) => {
         return;
     }
 }, false);
-
 
